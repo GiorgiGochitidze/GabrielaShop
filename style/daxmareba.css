@@ -1,0 +1,77 @@
+.accordion{
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.accordion-header{
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.accordion-header:hover{
+    background-color: pink;
+    margin-left: 1px;
+}
+
+.accordion-body{
+    display: none;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: default;
+    border-radius: 80px;
+}
+
+.accordion-body:hover{
+    background-color: rgba(252, 172, 185, 0.267);
+}
+
+.accordion-body.active{
+    display: block;
+}
+
+/* laptops */
+@media screen and (max-width: 992px) {
+    .motherX{
+        width: 768px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
+/* tablets */
+@media screen and (max-width: 650px) {
+   .motherX{
+    width: 476px;
+    margin: auto;
+   }
+   header{
+    width: 100%;
+   }
+}
+/* mobile phones */
+@media screen and (max-width: 476px) {
+    .motherX{
+        width: 235px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .motherX{
+        display: block;
+        margin: auto;
+        padding: 0 1px;
+    }
+    header{
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+
+
+.lis a{
+    text-decoration: none;
+    color: black;
+}
+
+.lis a:hover{
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.motherX{
+    display: flex;
+    justify-content: center;
+}
+
+li:hover{
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+    color: black;
+    cursor: default;
+}
+
+
+
+/* laptops */
+@media screen and (max-width: 992px) {
+    .motherX{
+        width: 768px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
+/* tablets */
+@media screen and (max-width: 650px) {
+   .motherX{
+    width: 476px;
+    margin: auto;
+   }
+   header{
+    width: 100%;
+   }
+}
+/* mobile phones */
+@media screen and (max-width: 476px) {
+    .motherX{
+        width: 235px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .motherX{
+        display: block;
+        margin: auto;
+        padding: 0 1px;
+    }
+    header{
+        width: 100%;
+    }
+}

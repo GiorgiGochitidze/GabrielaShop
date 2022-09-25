@@ -1,0 +1,384 @@
+/* styles */
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* body styles */
+
+.categories-meniu{
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.items{
+    border: 1px solid pink;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 100px;
+}
+
+.createbox{
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.items:hover{
+    background-color: rgb(253, 135, 154);
+    cursor: pointer;
+    box-shadow: 0 0 3px rgb(253, 135, 154), 0 0 4px rgb(253, 135, 154), 0 0 5px rgb(253, 135, 154);
+    color: white;
+}
+
+.none{
+    display: none;
+    border-bottom: 0;
+}
+
+.categories-btn{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    text-align: end;
+    border: 1px solid pink;
+    align-items: center;
+    height: auto;
+    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr ;
+    border-bottom: 1px solid pink;
+}
+
+
+.categories-btn:hover{
+    background-color: rgb(253, 135, 154);
+    cursor: pointer;
+    color: white;
+    
+}
+
+.window{
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 300px black, 0px 0 300px black, 0px 0 300px black, 0px 0 300px black;
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-top: -800px;
+
+}
+
+.select-logo{
+    width: 28px;
+    height: 28px;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.name{
+    width: 150px;
+    height: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+#demo{
+    border: 1px solid pink;
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    padding-right: 20px;
+    margin-left: 10px
+}
+
+#demo:hover{
+    cursor: pointer;
+    background-color: pink;
+    color: white;
+}
+
+h1{
+    padding-left: 15px;
+}
+
+.price{
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.containerXX{
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 2px black, 0 0 8px black, 0 0 15px black;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+}
+
+.containerXX img{
+    width: 100%;
+    height: 280px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.more-btn{
+    height: 40px;
+    width: 210px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #333333;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    background-color: greenyellow;
+}
+
+.containerXX .imgp{
+    height: 280px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.containerXX .imgps{
+    height: 280px;
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.more-btn:hover{
+    box-shadow: 0 0 10px greenyellow, 0 0 20px greenyellow, 0 0 30px greenyellow;
+    transition-delay: 0.1s;
+    color: #333333;
+}
+
+.containerX{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.favorites-btn{
+    height: 40px;
+    width: 210px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 0;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #333333;
+    margin-top: 7px;
+}
+
+.favorites-btn:hover{
+    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
+    transition-delay: 0.1s;
+}
+
+.buy-btn{
+    margin-left: 40px;
+    height: 40px;
+    width: 210px;
+    border-radius: 25px;
+    border: 1px solid skyblue;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #333333;
+}
+
+.buy-btn:hover{
+    box-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue;
+    transition-delay: 0.1s;
+    background-color: skyblue;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: -10px;
+}
+/* header */
+header{
+    height: 85px;
+    background-color: rgb(253, 135, 154);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    padding-right: 3px;
+    transition: 0.1s;
+}
+
+header .logo:hover{
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    background: white;
+}
+
+header .container{
+    align-items: center;
+}
+
+header nav a{
+    border-radius: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.1s;
+}
+
+header nav a:hover{
+   box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+   background-color: white;
+   transition-delay: 0.1;
+   color: black;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+
+footer{
+    padding: 15px 0;
+}
+
+footer p{
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: calc(100% - 45px);
+    justify-content: space-between;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    color: blue;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 0 5px; 
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+footer a:hover{
+    color: blue;
+    text-shadow:   0 0 10px black, 0 0 20px black, 0 0 30px black;
+    transition-delay: 0.1s;
+}
+
+footer i{
+    cursor: default;
+}
+
+/* laptops */
+@media screen and (max-width: 992px) {
+    .containerX{
+        width: 760px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+    }
+
+    .containerX{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* tablets */
+@media screen and (max-width: 760px) {
+   .containerX{
+    width: 476px;
+    margin: auto;
+   }
+   header{
+    width: 100%;
+   }
+   .containerX{
+    grid-template-columns: 1fr;
+    margin: auto;
+    }
+
+}
+/* mobile phones */
+@media screen and (max-width: 476px) {
+    .containerX{
+        width: 235px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+    }
+    .containerX{
+        grid-template-columns: 1fr;
+        margin: auto;
+        }
+
+}
+
+@media screen and (max-width: 270px){
+    .motherX{
+        display: block;
+        margin: auto;
+        padding: 0 1px;
+    }
+    header{
+        width: 100%;
+    }
+}
