@@ -1,5 +1,4 @@
 .chat-container{
-<<<<<<< HEAD
     width: 700px;
     height: 400px;
     padding: 10px;
@@ -70,7 +69,7 @@ form{
         width: 100%;
     }
 }
-=======
+.chat-container{
   width: 800px;
   height: 600px;
   padding: 10px;
@@ -106,4 +105,4 @@ textarea{
   min-width: 500px;
   height: 30px; 
 }
->>>>>>> 59c40b506db0b062f16179a057b034c0124866ed
+
