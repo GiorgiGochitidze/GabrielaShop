@@ -1,4 +1,5 @@
 .chat-container{
+<<<<<<< HEAD
     width: 700px;
     height: 400px;
     padding: 10px;
@@ -69,3 +70,40 @@ form{
         width: 100%;
     }
 }
+=======
+  width: 800px;
+  height: 600px;
+  padding: 10px;
+  border: 1px solid red;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chat-box{
+  width: 100%;
+  min-height: 50px;
+  background: #32618a;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  word-break: break-all;
+  padding: 5px;
+}
+
+.chat-box.me{
+  width: 100%;
+  background: #FFF;
+  min-height: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: right;
+  border: 1px solid #32618a;
+  color: #000;
+  word-break: break-all;
+}
+
+textarea{
+  min-width: 500px;
+  height: 30px; 
+}
+>>>>>>> 59c40b506db0b062f16179a057b034c0124866ed
