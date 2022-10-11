@@ -1,7 +1,7 @@
-const bot_questions = ["გამარჯობა", "რაგქვია", "ვინ არის შენი შემქმნელი", "რისთვის ხარ განკუთვნილი", "როდის შეიქქმენი"]
+const bot_questions = ["გამარჯობა", "რაგქვია", "ვინ არის შენი შემქმნელი", "რისთვის ხარ განკუთვნილი", "როდის შეიქმენი"]
 
 const answers = ["JARVIS: გამარჯობა!!", "JARVIS: მე მქვია ჯარვისი", "JARVIS: ჩემი შემქნელია: გიორგი გოჩიტიძე",
-"JARVIS: მე ვარ შექმნილი იმისთვის რომ დაგეხმაროთ, დაგეხმაროთ ყიდვაში და ა.შ"]
+"JARVIS: მე ვარ შექმნილი იმისთვის რომ დაგეხმაროთ, დაგეხმაროთ ყიდვაში და ა.შ", "კარგად თქვენ?", "კარგია"]
 
 let currentQuestion = 0
 
@@ -31,5 +31,13 @@ if(input.value.trim() == bot_questions[3] || input.value.trim() == "რისთ
     chatContainer.innerHTML += `   
     <div class="chat-box">${answers[3]}</div>`
 }
-
+  
+if(input.value.trim() == "როგორ ხარ"){
+      chatContainer.innerHTML += `   
+      <div class="chat-box">${answers[4]}</div>`
+}
+if(input.value.trim() == "მეც კარგად"){
+      chatContainer.innerHTML += `   
+      <div class="chat-box">${answers[5]}</div>`
+}
 })
