@@ -12,12 +12,13 @@
   .chat-box{
     width: 100%;
     min-height: 50px;
-    background: #32618a;
+    background: #3757e7;
     border-radius: 5px;
     margin-top: 10px;
     color: white;
     word-break: break-all;
     padding: 5px;
+    box-shadow: 0 0 5px #3757e7, 0 0 10px #3757e7, 0 0 15px #3757e7;
   }
   
   .chat-box.me{
@@ -33,6 +34,7 @@
   }
   
   textarea{
+    border-radius: 10px;
     min-width: 612px;
     height: 30px; 
     margin-left: 5px;
@@ -45,7 +47,13 @@
     border: 0;
     margin-left: 5px;
     border-radius: 5px;
-    cursor: pointer;
+    color: white;
+  }
+  
+  .submites-button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px #3757e7, 0 0 10px #3757e7, 0 0 15px #3757e7;
+  transition: 0.2s;
 }
 
 form{
