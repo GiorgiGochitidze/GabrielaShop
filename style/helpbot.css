@@ -7,6 +7,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     margin: auto;
+    box-sizing: border-box;
   }
   
   .chat-box{
@@ -18,7 +19,7 @@
     color: white;
     word-break: break-all;
     padding: 5px;
-    box-shadow: 0 0 5px #3757e7, 0 0 10px #3757e7, 0 0 15px #3757e7;
+    box-sizing: border-box;
   }
   
   .chat-box.me{
@@ -31,14 +32,16 @@
     border: 1px solid #32618a;
     color: #000;
     word-break: break-all;
+    box-sizing: border-box;
   }
   
   textarea{
     border-radius: 10px;
-    min-width: 612px;
+    width: 612px;
     height: 30px; 
     margin-left: 5px;
     padding: 5px;
+    box-sizing: border-box;
   }
 .submites-button{
     height: 35px;
@@ -48,12 +51,14 @@
     margin-left: 5px;
     border-radius: 5px;
     color: white;
+    box-sizing: border-box;
   }
   
   .submites-button:hover{
   cursor: pointer;
   box-shadow: 0 0 5px #3757e7, 0 0 10px #3757e7, 0 0 15px #3757e7;
   transition: 0.2s;
+  box-sizing: border-box;
 }
 
 form{
@@ -62,6 +67,7 @@ form{
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .bot-box{
@@ -70,11 +76,54 @@ form{
     display: grid;
     justify-content: center;
     margin: auto;
+    box-sizing: border-box;
 }
-
-@media screen and (max-width: 760px) {
+/* big laptops */
+@media screen and (max-width: 1024px){
     .bot-box{
-        width: 100%;
+        width: 72%;
+        
+    }
+    form{
+      width: auto;
+    }
+
+    textarea{
+      width: 80%;
+    }
+
+    .submites-button{
+      width: 20%;
+    }
+
+    body{
+      overflow-x: hidden;
     }
 }
+/* phones */
 
+@media screen and (max-width: 375px) {
+  .bot-box{
+      width: 100%;
+      margin-left: -20px;
+  }
+  form{
+    width: 123%;
+  }
+
+  textarea{
+    width: 80%;
+  }
+
+  .submites-button{
+    width: 50%;
+  }
+
+  .chat-container{
+    width: 123%;
+  }
+
+  footer p{
+    font-size: 12px;
+  }
+}

@@ -14,13 +14,13 @@ const input = document.querySelector('textarea')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  if(input.value.trim() == bot_questions[0]){
+  if(input.value.trim() == bot_questions[0] || input.value.trim() == "გამარჯობა ჯარვის" || input.value.trim() == "ჯარვის გამარჯობა"){
       chatContainer.innerHTML += `   
       <div class="chat-box">${answers[0]}</div>`
       input.value = "";
 }
 
-if(input.value.trim() == bot_questions[1]){
+if(input.value.trim() == bot_questions[1] || input.value.trim() == "ვინ ხარ"){
     chatContainer.innerHTML += `   
     <div class="chat-box">${answers[1]}</div>`
     input.value = "";
@@ -77,7 +77,7 @@ if(input.value.trim() == "როგორ გესაუბროთ" || input.
     input.value = "";
 }
 
-if(input.value.trim() == "რასაკეთებ" || input.value.trim() == "რაშობი"){
+if(input.value.trim() == "რასაკეთებ" || input.value.trim() == "რაშობი" || input.value.trim() == "სხვა" || input.value.trim() == "ამის გარდა" || input.value.trim() == "მაგის გარდა"){
     chatContainer.innerHTML += `   
     <div class="chat-box">JARVIS: არაფერს ისეთს თქვენ გესაუბრებით</div>`
     input.value = "";
