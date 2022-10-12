@@ -83,3 +83,4 @@ if(input.value.trim() == "რასაკეთებ" || input.value.trim() == 
     input.value = "";
 }
 })
+
