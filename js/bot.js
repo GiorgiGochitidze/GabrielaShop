@@ -8,6 +8,7 @@ const answers = ["JARVIS: გამარჯობა!!", "JARVIS: მე მქ
 let currentQuestion = 0
 
 
+
 const chatContainer = document.querySelector('.chat-container')
 const form = document.querySelector('form')
 const input = document.querySelector('textarea')
@@ -37,7 +38,6 @@ if(input.value.trim() == bot_questions[3] || input.value.trim() == "რისთ
     <div class="chat-box">${answers[3]}</div>`
     input.value = "";
 }
-
 
 if(input.value.trim() == "როგორ ხარ"){
     chatContainer.innerHTML += `   
@@ -82,5 +82,28 @@ if(input.value.trim() == "რასაკეთებ" || input.value.trim() == 
     <div class="chat-box">JARVIS: არაფერს ისეთს თქვენ გესაუბრებით</div>`
     input.value = "";
 }
-})
 
+if(input.value.includes("გახსენი გუგლი") || input.value.includes("გუგლი") || input.value.includes("ჯარვის გახსენი გუგლი")
+|| input.value.includes("ჯარვის გუგლი გახსენი")){
+    window.open(`https://www.google.com/`)
+    input.value = "";
+}
+
+if(input.value.includes("გახსენი მთავარი გვერდი") || input.value.includes("გახსენი მთავარი") || input.value.includes("მთავარი")
+|| input.value.includes("ჯარვის მთავარი") || input.value.includes("ჯარვის გახსენი მთავარი")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/index.html`)
+    input.value = "";
+}
+
+if(input.value.includes("გახსენი დახმარების გვერდი") || input.value.includes("გახსენი დახმარება") || input.value.includes("დახმარება")
+|| input.value.includes("ჯარვის დახმარება") || input.value.includes("ჯარვის გახსენი დახმარება")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/daxmareba.html`)
+    input.value = "";
+}
+
+if(input.value.includes("გახსენი კონტაქტების გვერდი") || input.value.includes("გახსენი კონტაქტები") || input.value.includes("კონტაქტები")
+|| input.value.includes("ჯარვის კონტაქტები") || input.value.includes("ჯარვის გახსენი კონტაქტები")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/kontaqtebi.html`)
+    input.value = "";
+}
+})
