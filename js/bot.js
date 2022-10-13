@@ -50,12 +50,18 @@ if(input.value.trim() == "მეც კარგად" || input.value.trim() ==
     input.value = "";
 }
 
-if(input.value.trim() == "დამაკავშირე შენს პატრონთან" || input.value.trim() == "დამაკავშირე შენს შემქმნელთან" || input.value.trim() == "დამაკავშირე პატრონთან"
+const submiting = document.querySelector('.submites-button')
+
+submiting.addEventListener('click', () => {
+    if(input.value.trim() == "დამაკავშირე შენს პატრონთან" || input.value.trim() == "დამაკავშირე შენს შემქმნელთან" || input.value.trim() == "დამაკავშირე პატრონთან"
 || input.value.trim() == "დამაკავშირე შემქმნელთან"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">${answers[6]}</div>`
+    window.open(`https://mail.google.com/mail/u/0/#inbox`, "_blank")
     input.value = "";
 }
+})
+
+
+
 
 if(input.value.trim() == "რამდენის ხარ" || input.value.trim() == "რამდენი წლის ხარ" || input.value.trim() == "როდის შეიქმენი"){
     chatContainer.innerHTML += `   
@@ -83,27 +89,29 @@ if(input.value.trim() == "რასაკეთებ" || input.value.trim() == 
     input.value = "";
 }
 
+
+
 if(input.value.includes("გახსენი გუგლი") || input.value.includes("გუგლი") || input.value.includes("ჯარვის გახსენი გუგლი")
 || input.value.includes("ჯარვის გუგლი გახსენი")){
-    window.open(`https://www.google.com/`)
+    window.open(`https://www.google.com/`, "_self")
     input.value = "";
 }
 
 if(input.value.includes("გახსენი მთავარი გვერდი") || input.value.includes("გახსენი მთავარი") || input.value.includes("მთავარი")
 || input.value.includes("ჯარვის მთავარი") || input.value.includes("ჯარვის გახსენი მთავარი")){
-    window.open(`https://giorgigochitidze.github.io/GabrielaShop/index.html`)
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/index.html`, "_self")
     input.value = "";
 }
 
 if(input.value.includes("გახსენი დახმარების გვერდი") || input.value.includes("გახსენი დახმარება") || input.value.includes("დახმარება")
 || input.value.includes("ჯარვის დახმარება") || input.value.includes("ჯარვის გახსენი დახმარება")){
-    window.open(`https://giorgigochitidze.github.io/GabrielaShop/daxmareba.html`)
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/daxmareba.html`, "_self")
     input.value = "";
 }
 
 if(input.value.includes("გახსენი კონტაქტების გვერდი") || input.value.includes("გახსენი კონტაქტები") || input.value.includes("კონტაქტები")
 || input.value.includes("ჯარვის კონტაქტები") || input.value.includes("ჯარვის გახსენი კონტაქტები")){
-    window.open(`https://giorgigochitidze.github.io/GabrielaShop/kontaqtebi.html`)
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/kontaqtebi.html`, "_self")
     input.value = "";
 }
 })
