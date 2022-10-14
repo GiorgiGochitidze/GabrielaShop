@@ -300,6 +300,12 @@ footer p{
     justify-content: center;
 }
 
+.menius-logo{
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+}
+
 nav{
     width: calc(100% - 45px);
     justify-content: space-between;
