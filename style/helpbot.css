@@ -86,3 +86,13 @@ form{
     box-sizing: border-box;
     flex-wrap: nowrap;
 }
+
+footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 80%;
+  width: 100%;
+}
