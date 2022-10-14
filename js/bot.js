@@ -119,6 +119,17 @@ if(input.value.trim() == "კი" || input.value.trim() == "როგორც �
     input.value = "";
 }
 
+if(input.value.trim() == "ჯარვის თემო გენატრება?" || input.value.trim() == "თემო გენატრება?"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: კი ძალიან😊😊😊</div>`
+    const monatreba = setTimeout(monatrebaTemos, 1000)
+    function monatrebaTemos(){
+        chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: როდის მოვა? ☺️☺️</div>`
+    }
+    input.value = "";
+}
+
 if(input.value.trim() == "არა" || input.value.trim() == "არა არა არა და არა"){
     chatContainer.innerHTML += `   
     <div class="chat-box">JARVIS: ცუდია, ბოდიშით მაშინ მოგმართავთ როგორც ბატონო თემურ</div>`
