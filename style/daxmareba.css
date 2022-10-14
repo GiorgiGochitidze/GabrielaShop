@@ -17,7 +17,7 @@
     background-color: pink;
     margin-left: 1px;
 }
- 
+
 .accordion-body{
     display: none;
     padding: 15px;
@@ -37,41 +37,11 @@
 /* laptops */
 @media screen and (max-width: 992px) {
     .motherX{
-        width: 768px;
-        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
-    header{
-        width: 100%;
-    }
-}
-/* tablets */
-@media screen and (max-width: 650px) {
-   .motherX{
-    width: 476px;
-    margin: auto;
-   }
-   header{
-    width: 100%;
-   }
-}
-/* mobile phones */
-@media screen and (max-width: 476px) {
-    .motherX{
-        width: 235px;
-        margin: auto;
-    }
-    header{
-        width: 100%;
-    }
+    
 }
 
-@media screen and (max-width: 270px){
-    .motherX{
-        display: block;
-        margin: auto;
-        padding: 0 1px;
-    }
-    header{
-        width: 100%;
-    }
-}

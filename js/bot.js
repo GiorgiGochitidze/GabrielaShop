@@ -7,7 +7,12 @@ const answers = ["JARVIS: გამარჯობა!!", "JARVIS: მე მქ
 "JARVIS: თქვენ შეგიძლიათ გამოიყენოთ შემდეგი სიტყვები: გამარჯობა, რაგქვია, როგორ ხარ, რას აკეთებ, რისთვის ხარ შექმნილი, როდის შეიქმენი, დამაკავშირე პატრონთან/შემქმნელთან, რამდენის ხარ, სად ვიყიდო, რასაკეთებ, რა შეგეკითხო"]
 let currentQuestion = 0
 
+const meniusButton = document.querySelector(".menius-button")
 
+meniusButton.addEventListener('click', () => {
+    const meniusCategories = document.querySelector(".menius-buttons-list")
+    meniusCategories.classList.toggle('none');
+})
 
 const chatContainer = document.querySelector('.chat-container')
 const form = document.querySelector('form')

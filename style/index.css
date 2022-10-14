@@ -289,15 +289,28 @@ nav a{
 /* footer */
 
 footer{
+    width: auto;
     padding: 15px 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 footer p{
-    margin-bottom: 0;
     align-items: center;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.containerUWU{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .menius-logo{
@@ -319,6 +332,8 @@ nav{
 }
 
 footer a{
+    font-size: 1rem;
+    box-sizing: border-box;
     text-decoration: none;
     color: black;
     padding: 0 5px; 
@@ -340,7 +355,7 @@ footer i{
     display: none; 
 } 
 
-.menius-categories{
+.menius-list{
     display: none;
 }
 
@@ -365,12 +380,14 @@ footer i{
     }
 
 .menius-logo{
+    box-sizing: border-box;
     width: 20px;
     height: 20px;
     margin-left: -10px;
 }
 /* menius gilaki */
 .menius-button{
+    box-sizing: border-box;
     color: black;
     border-radius: 10px;
     justify-content: space-around;
@@ -381,7 +398,7 @@ footer i{
     background-color: white;
 }
 /* kategoriebi */
-.menius-buttons-categories{
+.menius-buttons-list{
     border: 1px solid white;
     width: 240px;
     height: 85%;
@@ -399,7 +416,7 @@ footer i{
     cursor: pointer;
 }
 
-.menius-categories{
+.menius-list{
     border: 1px solid #84817a;
     padding: 15px;
     box-sizing: border-box;
@@ -411,7 +428,7 @@ footer i{
     text-decoration: none;
 }
 
-.menius-categories:hover{
+.menius-list:hover{
     background-color: #ffffff;
     transition: 0.1s;
     cursor: pointer;
