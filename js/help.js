@@ -25,20 +25,9 @@ items.forEach(item => {
 
  const appear = document.querySelector('.containerX');
 
- const listen = racxa.addEventListener('click', () => {
-    const newDiv = document.createElement('div');
-    newDiv.classList.add('window');
-    appear.append(newDiv);
-    console.log(newDiv);
- });
+const meniusButton = document.querySelector(".menius-button")
 
- //msoflio dro
-setInterval(myFunction, 1000);
-
-function myFunction() {
-    let d = new Date();
-    document.getElementById("demo").innerHTML = 
-    d.getHours() + ":" + 
-    d.getMinutes() + ":" + 
-    d.getSeconds();
-}
+meniusButton.addEventListener('click', () => {
+    const meniusCategories = document.querySelector(".menius-buttons-categories")
+    meniusCategories.classList.toggle('none');
+})
