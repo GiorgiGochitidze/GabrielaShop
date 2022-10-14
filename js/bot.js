@@ -72,6 +72,39 @@ if(input.value.trim() == "რამდენის ხარ" || input.value.tri
     input.value = "";
 }
 
+if(input.value.trim() == "ჯარვის თუ მიხვდები ვინ მოვიდა" || input.value.trim() == "ჯარვის თუ მიხვდები ვინაა აქ" || input.value.trim() == "ჯარვის თუ მიხვდები ვინ არის ჩემთან"
+|| input.value.trim() == "თუ მიხვდები ვინ არის ჩემთან" || input.value.trim() == "აბა ვინ არის ჩემთან" || input.value.trim() == "აბა ვინ არის ჩემთან თუ გამოიცნობ"
+|| input.value.trim() == "თუ გამოიცნობ ვინაა" || input.value.trim() == "თუ გამოიცნობ ვინ არის ჩემთან"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: და ვინარის თქვენთან?</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "თემური" || input.value.trim() == "თემუკა" || input.value.trim() == "თემო"
+|| input.value.trim() == "თემუკა ჭაღალიძე" || input.value.trim() == "ჩემი საუკეთესო ძმაკაცი" || input.value.trim() == "ჩემი საუკეთესო მეგობარი"
+|| input.value.trim() == "ჩემი ბავშვობის მეგობარი"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: ოჰო😮😯, ეს ხომ თემურია თქვენი საუკეთესო მეგობარი</div>`
+    const meeting = setTimeout(niceMeet, 3000)
+    function niceMeet(){
+        chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: სასიამოვნოა თქვენი გაცნობა, ბატონო თემურ, შეიძლება დაგიძახოთ უბრალოდ თემური?</div>`
+    }
+    input.value = "";
+}
+
+if(input.value.trim() == "კი" || input.value.trim() == "როგორც გინდა" || input.value.trim() == "დიახ"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: კარგით, მადლობა აწე დაგიძახებთ თემურის</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "არა" || input.value.trim() == "არა არა არა და არა"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: ცუდია, ბოდიშით მაშინ მოგმართავთ როგორც ბატონო თემურ</div>`
+    input.value = "";
+}
+
 if(input.value.trim() == "სად ვიყიდო" || input.value.trim() == "როგორ ვიყიდო" || input.value.trim() == "როგორ ვიყიდო ნივთი"
 || input.value.trim() == "როგორ ვიყიდო პროდუქტი"){
     chatContainer.innerHTML += `   
