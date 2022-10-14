@@ -331,8 +331,8 @@ footer i{
 }
 /* menius surati */
 .menius-button{
-    display: none;
-}
+    display: none; 
+} 
 
 .menius-categories{
     display: none;

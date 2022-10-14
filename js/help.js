@@ -18,7 +18,7 @@ items.forEach(item => {
      const check = document.querySelector('.categories-meniu');
      check.classList.toggle('none');
  });
- 
+  
  //yidvis
 
  const racxa = document.querySelector('.buy-btn');
