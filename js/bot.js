@@ -20,6 +20,7 @@ const input = document.querySelector('textarea')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
+  //qartuli qomandebi
   if(input.value.trim() == bot_questions[0] || input.value.trim() == "გამარჯობა ჯარვის" || input.value.trim() == "ჯარვის გამარჯობა"){
       chatContainer.innerHTML += `   
       <div class="chat-box">${answers[0]}</div>`
@@ -64,9 +65,6 @@ submiting.addEventListener('click', () => {
     input.value = "";
 }
 })
-
-
-
 
 if(input.value.trim() == "რამდენის ხარ" || input.value.trim() == "რამდენი წლის ხარ" || input.value.trim() == "როდის შეიქმენი"){
     chatContainer.innerHTML += `   
@@ -117,6 +115,87 @@ if(input.value.includes("გახსენი დახმარების �
 if(input.value.includes("გახსენი კონტაქტების გვერდი") || input.value.includes("გახსენი კონტაქტები") || input.value.includes("კონტაქტები")
 || input.value.includes("ჯარვის კონტაქტები") || input.value.includes("ჯარვის გახსენი კონტაქტები")){
     window.open(`https://giorgigochitidze.github.io/GabrielaShop/kontaqtebi.html`, "_self")
+    input.value = "";
+}
+
+//inglisuri qomandebi
+
+if(input.value.trim() == "hello" || input.value.trim() == "jarvis hello" || input.value.trim() == "hello jarvis"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: Hello!</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "how are you" || input.value.trim() == "how are you jarvis" || input.value.trim() == "jarvis how are you"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: i'm good and you?</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "mee too" || input.value.trim() == "me to" || input.value.trim() == "i am fine" || input.value.trim() == "i'm fine"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: nice!</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "what are you doing" || input.value.trim() == "what are you doing jarvis" || input.value.trim() == "jarvis what are you doing" || input.value.trim() == "what are you doing jarvis now"
+|| input.value.trim() == "jarvis what are you doing now" || input.value.trim() == "what are you doing now"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: nothing i'm talking to you 😀😁</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "what are you" || input.value.trim() == "what are you made for" || input.value.trim() == "what is your destination"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: 🤖🤖🤖I'm Jarvis, a virtual assistant, and I'm here to help you as well as anyone else</div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "how old are you" || input.value.trim() == "how old are you jarvis" || input.value.trim() == "jarvis how old are you"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: i was born in 2022.10.11 at 12p.m 🥳🥳🥳 </div>`
+    input.value = "";
+}
+
+if(input.value.includes("open google") || input.value.includes("google") || input.value.includes("jarvis open google")
+|| input.value.includes("jarvis open google") || input.value.includes("jarvis open the google") || input.value.includes("open the google")){
+    window.open(`https://www.google.com/`, "_self")
+    input.value = "";
+}
+
+if(input.value.includes("open main page") || input.value.includes("open main") || input.value.includes("main")
+|| input.value.includes("jarvis main") || input.value.includes("jarvis open main")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/index.html`, "_self")
+    input.value = "";
+}
+
+if(input.value.includes("open help page") || input.value.includes("open help") || input.value.includes("help")
+|| input.value.includes("jarvis help") || input.value.includes("jarvis open help")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/daxmareba.html`, "_self")
+    input.value = "";
+}
+
+if(input.value.includes("open contacts page") || input.value.includes("open contacts") || input.value.includes("contacts")
+|| input.value.includes("jarvis open contacts") || input.value.includes("open contacts jarvis")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/kontaqtebi.html`, "_self")
+    input.value = "";
+}
+
+if(input.value.includes("open news page") || input.value.includes("open news") || input.value.includes("news")
+|| input.value.includes("jarvis open news") || input.value.includes("open news jarvis")){
+    window.open(`https://giorgigochitidze.github.io/GabrielaShop/gamoxmaureba.html`, "_self")
+    input.value = "";
+}
+
+if(input.value.includes("open wikipedia") || input.value.includes("wikipedia") || input.value.includes("jarvis open wikipedia")
+|| input.value.includes("open wikipedia jarvis")){
+    window.open(`https://www.wikipedia.org/`, "_self")
+    input.value = "";
+}
+
+if(input.value.includes("open youtube") || input.value.includes("youtube") || input.value.includes("jarvis open youtube")
+|| input.value.includes("open youtube jarvis")){
+    window.open(`https://www.youtube.com/`, "_self")
     input.value = "";
 }
 })
