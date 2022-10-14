@@ -92,7 +92,11 @@ if(input.value.trim() == "რასაკეთებ" || input.value.trim() == 
     input.value = "";
 }
 
-
+if(input.value.trim() == "ნახვამდის" || input.value.trim() == "კარგად" || input.value.trim() == "კარგად ჯარვის" || input.value.trim() == "ჯარვის კარგად" || input.value.trim() == "მომოვალ შეხვედრამდე"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: ნახვამდის მომავალ შეხვედრამდე, სასიამოვნო დასვენებები 🖐️🖐️🖐️🖐️</div>`
+    input.value = "";
+}
 
 if(input.value.includes("გახსენი გუგლი") || input.value.includes("გუგლი") || input.value.includes("ჯარვის გახსენი გუგლი")
 || input.value.includes("ჯარვის გუგლი გახსენი")){
@@ -154,6 +158,12 @@ if(input.value.trim() == "what are you" || input.value.trim() == "what are you m
 if(input.value.trim() == "how old are you" || input.value.trim() == "how old are you jarvis" || input.value.trim() == "jarvis how old are you"){
     chatContainer.innerHTML += `   
     <div class="chat-box">JARVIS: i was born in 2022.10.11 at 12p.m 🥳🥳🥳 </div>`
+    input.value = "";
+}
+
+if(input.value.trim() == "goodbye" || input.value.trim() == "bye" || input.value.trim() == "bye bye" || input.value.trim() == "see you next time"){
+    chatContainer.innerHTML += `   
+    <div class="chat-box">JARVIS: bye!!! 🖐️🖐️🖐️</div>`
     input.value = "";
 }
 
