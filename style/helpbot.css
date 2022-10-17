@@ -13,6 +13,10 @@
     flex-wrap: nowrap;
   }
   
+body{
+  overflow-y: hidden;
+}
+
   .chat-box{
     width: 100%;
     min-height: 50px;
@@ -39,6 +43,9 @@
   }
 
   .circle1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -52,6 +59,9 @@
   }
 
   .circle2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: absolute;
     top: 25px;
     left: 25px;
@@ -68,6 +78,9 @@
   }
 
   .circle3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: absolute;
     top: 35px;
     left: 35px;
@@ -84,6 +97,9 @@
   }
 
   .circle4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: absolute;
     top: 55px;
     left: 55px;
@@ -100,6 +116,9 @@
   }
 
   .circle5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: absolute;
     top: 65px;
     left: 65px;
@@ -116,6 +135,9 @@
   }
 
   .circle6{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: absolute;
     top: 135px;
     left: 135px;
@@ -132,6 +154,9 @@
   }
 
   .circle-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: absolute;
     top: 25%;
     left: 35%;
