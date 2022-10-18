@@ -158,7 +158,7 @@ h1{
     color: #333333;
     margin-left: 40px;
     margin-bottom: 10px;
-    background-color: greenyellow;
+    background-color: pink;
 }
 
 .containerXX .imgp{
@@ -175,7 +175,7 @@ h1{
 }
 
 .more-btn:hover{
-    box-shadow: 0 0 10px greenyellow, 0 0 20px greenyellow, 0 0 30px greenyellow;
+    box-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;
     transition-delay: 0.1s;
     color: #333333;
 }
@@ -214,7 +214,7 @@ h1{
     height: 40px;
     width: 210px;
     border-radius: 25px;
-    border: 1px solid skyblue;
+    border: 1px solid rgb(253, 135, 154);
     cursor: pointer;
     transition: 0.2s;
     font-size: 17px;
@@ -222,9 +222,9 @@ h1{
 }
 
 .buy-btn:hover{
-    box-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue;
+    box-shadow: 0 0 10px rgb(253, 135, 154), 0 0 20px rgb(253, 135, 154), 0 0 30px rgb(253, 135, 154);
     transition-delay: 0.1s;
-    background-color: skyblue;
+    background-color: rgb(253, 135, 154);
 }
 
 .btn-container{
@@ -429,7 +429,6 @@ footer i{
 }
 /* kategoriebi */
 .menius-buttons-list{
-    border: 1px solid white;
     width: 240px;
     height: 85%;
     position: fixed;
@@ -438,6 +437,7 @@ footer i{
     border-top-right-radius: 40px;
     padding-inline: 10px;
     padding-top: 30px;
+    opacity: 0.9;
 }
 /* menius animacia */
 .menius-button:hover{
