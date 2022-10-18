@@ -81,60 +81,24 @@ const submiting = document.querySelector('.submites-button')
 submiting.addEventListener('click', () => {
     if(input.value.trim() == "დამაკავშირე შენს პატრონთან" || input.value.trim() == "დამაკავშირე შენს შემქმნელთან" || input.value.trim() == "დამაკავშირე პატრონთან"
 || input.value.trim() == "დამაკავშირე შემქმნელთან"){
-    window.open(`https://mail.google.com/mail/u/0/#inbox`, "_blank")
-    input.value = "";
-}
+
+    setTimeout(rit, 1000)
+
+      function rit(){
+        chatContainer.innerHTML += `   
+      <div class="chat-box">JARVIS: რით დაგაკავშიროთ მეილით თუ ფეიზბუქით?<div>`
+      }
+
+      input.value = "";
+    }
+    if(input.value.trim() == "ფეისბუქით" || input.value.trim() == "ფეიზბუქით"){
+      window.open(`https://www.facebook.com/giorgi.gochitidze.395/`, "_blank")
+    }
+
+    if(input.value.trim() == "მაილით" || input.value.trim() == "გმაილით" || input.value.trim() == "ჯიმაილით" || input.value.trim() == "ემაილით"){
+        window.open(`https://mail.google.com/mail/u/0/#inbox`, "_blank")
+    }
 })
-
-if(input.value.trim() == "რამდენის ხარ" || input.value.trim() == "რამდენი წლის ხარ" || input.value.trim() == "როდის შეიქმენი"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">${answers[7]}</div>`
-    input.value = "";
-}
-
-if(input.value.trim() == "ჯარვის თუ მიხვდები ვინ მოვიდა" || input.value.trim() == "ჯარვის თუ მიხვდები ვინაა აქ" || input.value.trim() == "ჯარვის თუ მიხვდები ვინ არის ჩემთან"
-|| input.value.trim() == "თუ მიხვდები ვინ არის ჩემთან" || input.value.trim() == "აბა ვინ არის ჩემთან" || input.value.trim() == "აბა ვინ არის ჩემთან თუ გამოიცნობ"
-|| input.value.trim() == "თუ გამოიცნობ ვინაა" || input.value.trim() == "თუ გამოიცნობ ვინ არის ჩემთან"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: და ვინარის თქვენთან?</div>`
-    input.value = "";
-}
-
-if(input.value.trim() == "თემური" || input.value.trim() == "თემუკა" || input.value.trim() == "თემო"
-|| input.value.trim() == "თემუკა ჭაღალიძე" || input.value.trim() == "ჩემი საუკეთესო ძმაკაცი" || input.value.trim() == "ჩემი საუკეთესო მეგობარი"
-|| input.value.trim() == "ჩემი ბავშვობის მეგობარი"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: ოჰო😮😯, ეს ხომ თემურია თქვენი საუკეთესო მეგობარი</div>`
-    const meeting = setTimeout(niceMeet, 3000)
-    function niceMeet(){
-        chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: სასიამოვნოა თქვენი გაცნობა, ბატონო თემურ, შეიძლება დაგიძახოთ უბრალოდ თემური?</div>`
-    }
-    input.value = "";
-}
-
-if(input.value.trim() == "კი" || input.value.trim() == "როგორც გინდა" || input.value.trim() == "დიახ"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: კარგით, მადლობა აწე დაგიძახებთ თემურის</div>`
-    input.value = "";
-}
-
-if(input.value.trim() == "ჯარვის თემო გენატრება?" || input.value.trim() == "თემო გენატრება?"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: კი ძალიან😊😊😊</div>`
-    const monatreba = setTimeout(monatrebaTemos, 1000)
-    function monatrebaTemos(){
-        chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: როდის მოვა? ☺️☺️</div>`
-    }
-    input.value = "";
-}
-
-if(input.value.trim() == "არა" || input.value.trim() == "არა არა არა და არა"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: ცუდია, ბოდიშით მაშინ მოგმართავთ როგორც ბატონო თემურ</div>`
-    input.value = "";
-}
 
 if(input.value.trim() == "სად ვიყიდო" || input.value.trim() == "როგორ ვიყიდო" || input.value.trim() == "როგორ ვიყიდო ნივთი"
 || input.value.trim() == "როგორ ვიყიდო პროდუქტი"){
@@ -225,12 +189,6 @@ if(input.value.trim() == "what are you doing" || input.value.trim() == "what are
 if(input.value.trim() == "what are you" || input.value.trim() == "what are you made for" || input.value.trim() == "what is your destination"){
     chatContainer.innerHTML += `   
     <div class="chat-box">JARVIS: 🤖🤖🤖I'm Jarvis, a virtual assistant, and I'm here to help you as well as anyone else</div>`
-    input.value = "";
-}
-
-if(input.value.trim() == "how old are you" || input.value.trim() == "how old are you jarvis" || input.value.trim() == "jarvis how old are you"){
-    chatContainer.innerHTML += `   
-    <div class="chat-box">JARVIS: i was born in 2022.10.11 at 12p.m 🥳🥳🥳 </div>`
     input.value = "";
 }
 
