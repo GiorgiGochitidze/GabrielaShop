@@ -230,13 +230,17 @@ h1{
 .off{
     position: absolute;
     bottom: 10%;
-    width: 300px;
+    width: 50%;
     padding: 5px;
     border: 0;
     background: darkblue;
     color: white;
     border-radius: 20px;
     opacity: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .off:hover{
